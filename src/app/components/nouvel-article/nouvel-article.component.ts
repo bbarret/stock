@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { Lieu } from '../../model/lieu.model';
+import { Lieu } from '../../lieux/model/lieu.model';
 import { LieuService } from '../../services/lieu.service';
 import { Article } from '../../model/article.model';
 import { InventaireService } from '../../services/inventaire.service';

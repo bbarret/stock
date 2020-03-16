@@ -8,7 +8,7 @@ import { switchMap } from 'rxjs/operators/switchMap';
 import { UniteService } from '../../services/unite.service';
 import { Unite } from '../../model/unite.model';
 import { LieuService } from '../../services/lieu.service';
-import { Lieu } from '../../model/lieu.model';
+import { Lieu } from '../../lieux/model/lieu.model';
 
 @Component({
   selector: 'app-modifier-article',

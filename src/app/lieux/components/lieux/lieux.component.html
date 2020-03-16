@@ -1,0 +1,13 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th>Lieu</th>
+    </tr>
+  </thead>
+  <tr *ngFor="let lieu of lieux$|async">
+    <td>{{lieu.libelle}}</td>
+  </tr>
+</table>
+<button class="btn btn-primary" routerLink="creer-lieu">
+  <i class="fa fa-plus"></i> Ajouter
+</button>

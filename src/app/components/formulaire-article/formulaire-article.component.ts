@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FormBuilder, Validators, FormGroup, FormControl } from '@angular/forms';
 import { Article } from '../../model/article.model';
-import { Lieu } from '../../model/lieu.model';
+import { Lieu } from '../../lieux/model/lieu.model';
 import { Unite } from '../../model/unite.model';
 
 @Component({
