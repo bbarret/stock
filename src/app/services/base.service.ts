@@ -41,13 +41,9 @@ export class BaseService {
   }
 
   upgrade(): void {
-    this._db.get('metadonnee/version').then(function(doc) {
-      console.info(doc);
-    }).catch(function (err) {
-      console.log(err);
-    });
-
-
+    this._db.get('metadonnee/version')
+    .then(doc => console.info(doc))
+    .catch(err => console.log(err));
   }
 
 }
