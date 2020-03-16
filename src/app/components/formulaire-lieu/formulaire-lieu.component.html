@@ -1,0 +1,7 @@
+<form [formGroup]="formulaire" (ngSubmit)="submit()">
+    <div class="form-group">
+      <label for="formulaireArticle-libelle">Libellé&nbsp;:</label>
+      <input  id="formulaireArticle-libelle" type="text" formControlName="libelle" class="form-control" required />
+    </div>
+    <button type="submit" [disabled]="!formulaire.valid" class="btn btn-primary">Enregistrer</button>
+  </form>

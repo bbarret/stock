@@ -1,0 +1,2 @@
+<h3>{{(article$|async)?.nom}}</h3>
+<app-formulaire-article [lieux]="lieux$|async" [article]="article$|async" (submitted)="submit($event)" [unites]="unites$|async"></app-formulaire-article>

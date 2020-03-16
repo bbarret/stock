@@ -1,0 +1,37 @@
+<form [formGroup]="formulaire" (ngSubmit)="submit()">
+  <div class="form-group">
+    <label for="formulaireArticle-nom">Nom&nbsp;:</label>
+    <input id="formulaireArticle-nom" type="text" formControlName="nom" class="form-control" required />
+  </div>
+  <div class="form-group">
+    <label for="formulaireArticle-lieu">Lieu&nbsp;:</label>
+    <select id="formulaireArticle-lieu" formControlName="lieu" class="form-control" required>
+      <option *ngFor="let lieu of lieux" [ngValue]="lieu" [selected]="lieu._id===formulaire.value.lieu._id">{{lieu.libelle}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="formulaireArticle-dateLimite">Date limite&nbsp;:</label>
+    <input id="formulaireArticle-dateLimite" type="date" formControlName="dateLimite" class="form-control" required/>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6" formGroupName="quantiteUnitaire">
+      <label for="formulaireArticle-quantite-unitaire-valeur">Quantité unitaire&nbsp;:</label>
+      <div class="input-group">
+        <input id="formulaireArticle-quantite-unitaire-valeur" type="number" min="0" formControlName="valeur" class="form-control"
+          required />
+        <select class="custom-select" formControlName="unite">
+          <option *ngFor="let unite of unites" [ngValue]="unite" [selected]="unite.libelle==formulaire.value.quantiteUnitaire.unite.libelle">{{unite.libelle}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="formulaireArticle-unites">Nombre&nbsp;:</label>
+      <input id="formulaireArticle-unites" type="number" min="1" formControlName="unites" class="form-control" required />
+      <small class="form-text text-muted" [hidden]="!formulaire.value.unites||!formulaire.value.quantiteUnitaire.valeur||!formulaire.value.quantiteUnitaire.unite">
+        Soit un total de {{formulaire.value.unites*formulaire.value.quantiteUnitaire.valeur}}
+        {{formulaire.value.quantiteUnitaire.unite.libelle}}
+      </small>
+    </div>
+  </div>
+  <button type="submit" [disabled]="!formulaire.valid" class="btn btn-primary">Enregistrer</button>
+</form>

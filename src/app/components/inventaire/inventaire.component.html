@@ -1,0 +1,6 @@
+<h3>Tout le stock</h3>
+<app-liste-articles [articles]="tous$|async" (supprimer)="supprimer($event)" (ouvrir)="modifier($event)"></app-liste-articles>
+
+<button class="btn btn-primary" routerLink="creer-article">
+    <i class="fa fa-plus"></i> Ajouter
+</button>

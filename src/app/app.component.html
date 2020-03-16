@@ -1,0 +1,17 @@
+<div [hidden]="!updateAvailable">
+    Mise à jour disponible
+    <button class="btn btn-sm" (click)="update()">appliquer maintenant</button>
+</div>
+<nav class="navbar navbar-dark bg-dark mb-5">
+    <a class="navbar-brand" href="/">Stock</a>
+    <div class="navbar-expand mr-auto">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" routerLink="overview" routerLinkActive="active">Vue d'ensemble</a>
+            <a class="nav-item nav-link" routerLink="articles" routerLinkActive="active">Inventaire</a>
+            <a class="nav-item nav-link" routerLink="lieux" routerLinkActive="active">Lieux</a>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
