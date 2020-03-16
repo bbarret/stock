@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LieuService } from '../../../services/lieu.service';
+import { LieuService } from '../../services/lieu.service';
 import { Observable } from 'rxjs/Observable';
 import { Lieu } from '../../model/lieu.model';
 

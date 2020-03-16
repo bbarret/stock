@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Lieu } from '../../model/lieu.model';
 import { UUID } from 'angular2-uuid';
-import { LieuService } from '../../../services/lieu.service';
+import { LieuService } from '../../services/lieu.service';
 import { Router } from '@angular/router';
 
 @Component({

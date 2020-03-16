@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { Article } from '../../../model/article.model';
+import { Article } from '../../model/article.model';
 import { Observable } from 'rxjs/Observable';
-import { InventaireService } from '../../../services/inventaire.service';
+import { InventaireService } from '../../services/inventaire.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { map } from 'rxjs/operators/map';
 import { switchMap } from 'rxjs/operators/switchMap';
-import { UniteService } from '../../../services/unite.service';
-import { Unite } from '../../../model/unite.model';
-import { LieuService } from '../../../services/lieu.service';
+import { UniteService } from '../../services/unite.service';
+import { Unite } from '../../model/unite.model';
+import { LieuService } from '../../../lieux/services/lieu.service';
 import { Lieu } from '../../../lieux/model/lieu.model';
 
 @Component({

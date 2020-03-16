@@ -3,7 +3,7 @@ import { Article } from '../model/article.model';
 import { Observable } from 'rxjs/Observable';
 import { from } from 'rxjs/observable/from';
 import { map } from 'rxjs/operators/map';
-import { BaseService } from './base.service';
+import { BaseService } from '../../shared/services/base.service';
 import { ArticleDto } from '../dto/article.dto';
 import { Peremption } from '../dto/peremption';
 import { switchMap } from 'rxjs/operators/switchMap';

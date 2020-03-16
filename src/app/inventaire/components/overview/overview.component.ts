@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { InventaireService } from '../../inventaire/services/inventaire.service';
+import { InventaireService } from '../../services/inventaire.service';
 import { Observable } from 'rxjs/Observable';
-import { ArticleDto } from '../../inventaire/dto/article.dto';
+import { Article } from '../../model/article.model';
+import { ArticleDto } from '../../dto/article.dto';
+import { Peremption } from '../../dto/peremption';
 import { Router, ActivatedRoute } from '@angular/router';
 import { shareReplay } from 'rxjs/operators/shareReplay';
 import { LieuService } from 'src/app/lieux/services/lieu.service';

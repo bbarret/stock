@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { Lieu } from '../lieux/model/lieu.model';
-import { BaseService } from './base.service';
+import { Lieu } from '../model/lieu.model';
+import { BaseService } from '../../shared/services/base.service';
 
 @Injectable()
 export class LieuService {

@@ -2,28 +2,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { LOCALE_ID, NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { OverviewComponent } from './components/overview/overview.component';
+import { OverviewComponent } from './inventaire/components/overview/overview.component';
 import { RoutingModule } from './app.routing';
-import { InventaireService } from './services/inventaire.service';
+import { InventaireService } from './inventaire/services/inventaire.service';
 
 import { registerLocaleData, LocationStrategy, HashLocationStrategy, PathLocationStrategy } from '@angular/common';
 import localeFr from '@angular/common/locales/fr';
-import { FormulaireArticleComponent } from './components/formulaire-article/formulaire-article.component';
-import { NouvelArticleComponent } from './components/nouvel-article/nouvel-article.component';
+import { FormulaireArticleComponent } from './inventaire/components/formulaire-article/formulaire-article.component';
+import { NouvelArticleComponent } from './inventaire/components/nouvel-article/nouvel-article.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { BaseService } from './services/base.service';
-import { LieuService } from './services/lieu.service';
-import { LieuxComponent } from './lieux/components/lieux/lieux.component';
-import { FormulaireLieuComponent } from './lieux/components/formulaire-lieu/formulaire-lieu.component';
-import { NouveauLieuComponent } from './lieux/components/nouveau-lieu/nouveau-lieu.component';
+import { LieuService } from './lieux/services/lieu.service';
 import { DateValueAccessorModule } from 'angular-date-value-accessor';
-import { UniteService } from './services/unite.service';
-import { ModifierArticleComponent } from './components/modifier-article/modifier-article.component';
+import { UniteService } from './inventaire/services/unite.service';
+import { ModifierArticleComponent } from './inventaire/components/modifier-article/modifier-article.component';
 import { StopClickEventPropagationDirective } from './directives/stop-click-event-propagation.directive';
 import { environment } from '../environments/environment';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { InventaireComponent } from './components/inventaire/inventaire.component';
-import { ListeArticlesComponent } from './components/liste-articles/liste-articles.component';
+import { InventaireComponent } from './inventaire/components/inventaire/inventaire.component';
+import { ListeArticlesComponent } from './inventaire/components/liste-articles/liste-articles.component';
+import { BaseService } from './shared/services/base.service';
 
 registerLocaleData(localeFr);
 

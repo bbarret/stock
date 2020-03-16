@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { ArticleDto } from './node_modules/src/app/inventaire/dto/article.dto';
-import { Peremption } from './node_modules/src/app/inventaire/dto/peremption';
+import { ArticleDto } from 'src/app/inventaire/dto/article.dto';
+import { Peremption } from 'src/app/inventaire/dto/peremption';
 
 @Component({
   selector: 'app-liste-articles',

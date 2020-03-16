@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BaseService } from './base.service';
+import { BaseService } from '../../shared/services/base.service';
 import { Observable } from 'rxjs/Observable';
 import { Unite } from '../model/unite.model';
 

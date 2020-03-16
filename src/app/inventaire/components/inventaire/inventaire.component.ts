@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { InventaireService } from '../../../services/inventaire.service';
-import { ArticleDto } from './node_modules/src/app/inventaire/dto/article.dto';
+import { InventaireService } from '../../services/inventaire.service';
+import { ArticleDto } from 'src/app/inventaire/dto/article.dto';
 import { Observable } from 'rxjs';
-import { Peremption } from './node_modules/src/app/inventaire/dto/peremption';
+import { Peremption } from 'src/app/inventaire/dto/peremption';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({

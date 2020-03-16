@@ -1,4 +1,4 @@
-import { Lieu } from "../lieux/model/lieu.model";
+import { Lieu } from "../../lieux/model/lieu.model";
 import { Quantite } from "./quantite.model";
 
 export class Article {

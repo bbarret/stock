@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { SwUpdate, UpdateAvailableEvent } from '@angular/service-worker';
-import { Observable, interval } from 'rxjs';
-import { BaseService } from './services/base.service';
+import { Component } from "@angular/core";
+import { SwUpdate } from "@angular/service-worker";
+import { BaseService } from "./shared/services/base.service";
+import { interval } from "rxjs";
 
 @Component({
   selector: 'app-root',

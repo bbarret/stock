@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { Lieu } from '../../lieux/model/lieu.model';
-import { LieuService } from '../../lieux/services/lieu.service';
-import { Article } from '../../inventaire/model/article.model';
-import { InventaireService } from '../../inventaire/services/inventaire.service';
+import { Lieu } from '../../../lieux/model/lieu.model';
+import { LieuService } from '../../../lieux/services/lieu.service';
+import { Article } from '../../model/article.model';
+import { InventaireService } from '../../services/inventaire.service';
 import { Router } from '@angular/router';
 import { UUID } from 'angular2-uuid';
-import { Unite } from '../../inventaire/model/unite.model';
-import { UniteService } from '../../inventaire/services/unite.service';
+import { Unite } from '../../model/unite.model';
+import { UniteService } from '../../services/unite.service';
 import {Location} from '@angular/common';
 
 @Component({
