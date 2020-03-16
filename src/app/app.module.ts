@@ -3,7 +3,7 @@ import { LOCALE_ID, NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { OverviewComponent } from './components/overview/overview.component';
-import { RoutingModule } from './routing/routing.module';
+import { RoutingModule } from './app.routing';
 import { InventaireService } from './services/inventaire.service';
 
 import { registerLocaleData, LocationStrategy, HashLocationStrategy, PathLocationStrategy } from '@angular/common';
@@ -13,9 +13,9 @@ import { NouvelArticleComponent } from './components/nouvel-article/nouvel-artic
 import { ReactiveFormsModule } from '@angular/forms';
 import { BaseService } from './services/base.service';
 import { LieuService } from './services/lieu.service';
-import { LieuxComponent } from './components/lieux/lieux.component';
-import { FormulaireLieuComponent } from './components/formulaire-lieu/formulaire-lieu.component';
-import { NouveauLieuComponent } from './components/nouveau-lieu/nouveau-lieu.component';
+import { LieuxComponent } from './lieux/components/lieux/lieux.component';
+import { FormulaireLieuComponent } from './lieux/components/formulaire-lieu/formulaire-lieu.component';
+import { NouveauLieuComponent } from './lieux/components/nouveau-lieu/nouveau-lieu.component';
 import { DateValueAccessorModule } from 'angular-date-value-accessor';
 import { UniteService } from './services/unite.service';
 import { ModifierArticleComponent } from './components/modifier-article/modifier-article.component';
@@ -33,9 +33,6 @@ registerLocaleData(localeFr);
     OverviewComponent,
     FormulaireArticleComponent,
     NouvelArticleComponent,
-    LieuxComponent,
-    FormulaireLieuComponent,
-    NouveauLieuComponent,
     ModifierArticleComponent,
     StopClickEventPropagationDirective,
     InventaireComponent,
