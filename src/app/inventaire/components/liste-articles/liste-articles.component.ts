@@ -4,8 +4,7 @@ import { Peremption } from 'src/app/inventaire/dto/peremption';
 
 @Component({
   selector: 'app-liste-articles',
-  templateUrl: './liste-articles.component.html',
-  styleUrls: ['./liste-articles.component.less']
+  templateUrl: './liste-articles.component.html'
 })
 export class ListeArticlesComponent {
   @Input()

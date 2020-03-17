@@ -1,5 +1,0 @@
-<h3>Dates proches</h3>
-<app-liste-articles [articles]="articlesLimite$|async" (supprimer)="supprimer($event)" (ouvrir)="modifier($event)"></app-liste-articles>
-<button class="btn btn-primary" routerLink="creer-article" *ngIf="lieuxExistants$|async">
-    <i class="fa fa-plus"></i> Ajouter
-</button>
