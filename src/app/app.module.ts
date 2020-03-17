@@ -15,7 +15,6 @@ import { LieuService } from './lieux/services/lieu.service';
 import { DateValueAccessorModule } from 'angular-date-value-accessor';
 import { UniteService } from './inventaire/services/unite.service';
 import { ModifierArticleComponent } from './inventaire/components/modifier-article/modifier-article.component';
-import { StopClickEventPropagationDirective } from './directives/stop-click-event-propagation.directive';
 import { environment } from '../environments/environment';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { InventaireComponent } from './inventaire/components/inventaire/inventaire.component';
@@ -31,7 +30,6 @@ registerLocaleData(localeFr);
     FormulaireArticleComponent,
     NouvelArticleComponent,
     ModifierArticleComponent,
-    StopClickEventPropagationDirective,
     InventaireComponent,
     ListeArticlesComponent
   ],
