@@ -11,7 +11,7 @@ export class BaseService {
 
   constructor() {
     this._db = new PouchDB('stock');
-    const remoteDb = new PouchDB('http://bertrand:5984/stock', { auth: { username: 'bert', password: '1234' } });
+    const remoteDb = new PouchDB('http://localhost:5984/stock', { auth: { username: 'bert', password: '1234' } });
     this._db.sync(remoteDb, { live: true, retry: true })
       .on('change', function (change) {
         console.group('change');
