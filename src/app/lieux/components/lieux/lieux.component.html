@@ -1,13 +1,6 @@
-<table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th>Lieu</th>
-    </tr>
-  </thead>
-  <tr *ngFor="let lieu of lieux$|async">
-    <td>{{lieu.libelle}}</td>
-  </tr>
-</table>
+<div *ngFor="let lieu of lieux$|async" class="alert alert-neutral mb-2" role="alert">
+  <h3>{{lieu.libelle}}</h3>
+    </div>
 <button class="btn btn-primary" routerLink="creer-lieu">
   <i class="fa fa-plus"></i> Ajouter
 </button>
